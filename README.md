@@ -11,7 +11,7 @@ Please see the tests in this respository for thorough examples, but here's a qui
 First, create a BigPanda client with a specific Api type along with an app key and auth_token:
 
 ```rust
-let client = Client::new(
+let client = bigpanda::Client::new(
     ApiType::Alert,
     &app_key.to_string(),
     &auth_token.to_string()
