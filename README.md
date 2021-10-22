@@ -1,13 +1,12 @@
 # bigpanda-rs
-=============
 
 `bigpanda-rs` is a Rust library for integrating with the [BigPanda API](https://docs.bigpanda.io/reference).
 
 The library currently supports creating/updating alerts and changes.
 
-## How to Use
+## Usage Guide
 
-Please see the tests in this respository for thourough examples, but here's a quick guide.
+Please see the tests in this respository for thorough examples, but here's a quick guide.
 
 First, create a BigPanda client with a specific Api type along with an app key and auth_token:
 
