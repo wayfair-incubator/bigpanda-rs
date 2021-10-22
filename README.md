@@ -11,7 +11,11 @@ Please see the tests in this respository for thorough examples, but here's a qui
 First, create a BigPanda client with a specific Api type along with an app key and auth_token:
 
 ```rust
-let client = bigpanda::Client::new(
+use bigpanda_rs::Client;
+use bigpanda_rs::alert::{Alert, AlertStatus};
+use bigpanda_rs::change::Change;
+
+let client = Client::new(
     ApiType::Alert,
     &app_key.to_string(),
     &auth_token.to_string()
@@ -28,7 +32,7 @@ let alert = Alert {
     host: "host_name".to_string(),
     timestamp: Some(timestamp),
     description: Some("This is a description".to_string()),
-    check: Some("This is a check"),
+    check: Some("This is a check".to_string()),
     cluster: Some("cluster_name".to_string()),
     primary_property: Some("host".to_string()),
     secondary_property: None,
