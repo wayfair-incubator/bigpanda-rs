@@ -7,7 +7,7 @@ repository = "https://github.com/wayfair-incubator/bigpanda-rs"
 license-file = "LICENSE"
 keywords = ["bigpanda", "aiops", "alert", "change"]
 authors = ["Scott Shields <sshields@wayfair.com",]
-
+description = "A Rust library to interact with the BigPanda API"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
